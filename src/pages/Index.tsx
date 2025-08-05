@@ -12,9 +12,9 @@ const Index = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
-              <Icon name="Hammer" className="text-craft-brown" size={24} />
+              <Icon name="Home" className="text-craft-brown" size={24} />
               <h1 className="text-xl font-merriweather font-bold text-craft-brown">
-                Столярка45
+                СтройБани45
               </h1>
             </div>
             <div className="hidden md:flex space-x-8">
@@ -37,12 +37,12 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left animate-fade-in">
               <h1 className="text-4xl lg:text-6xl font-merriweather font-bold text-craft-brown mb-6">
-                Мастерская
-                <span className="block text-craft-orange">качественной мебели</span>
+                Строительство
+                <span className="block text-craft-orange">бань и беседок</span>
               </h1>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                Создаем уникальную мебель из натурального дерева по индивидуальным проектам. 
-                Более 15 лет опыта в столярном деле.
+                Строим качественные бани и уютные беседки из натурального дерева 
+                по индивидуальным проектам. Более 15 лет опыта в деревянном строительстве.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button size="lg" className="bg-craft-brown hover:bg-wood-darker text-white">
@@ -56,8 +56,8 @@ const Index = () => {
             </div>
             <div className="relative animate-scale-in">
               <img 
-                src="/img/adec8494-a8f1-4e17-b7b6-241371d442a2.jpg" 
-                alt="Столярная мастерская" 
+                src="/img/2fdf40e2-d28d-483b-92c7-152e4cf300b3.jpg" 
+                alt="Современная деревянная баня" 
                 className="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg">
@@ -80,41 +80,41 @@ const Index = () => {
               Наши услуги
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Полный цикл изготовления мебели от эскиза до установки
+              Полный цикл строительства от проекта до сдачи "под ключ"
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                icon: "Sofa",
-                title: "Мебель на заказ",
-                description: "Кухни, шкафы, столы, стулья по индивидуальным размерам"
-              },
-              {
                 icon: "Home",
-                title: "Встроенная мебель",
-                description: "Гардеробные, библиотеки, встроенные шкафы"
+                title: "Строительство бань",
+                description: "Финские сауны, русские бани, хаммамы по индивидуальным проектам"
               },
               {
-                icon: "Drill",
-                title: "Реставрация",
-                description: "Восстановление и ремонт антикварной мебели"
+                icon: "TreePine",
+                title: "Беседки и навесы",
+                description: "Открытые и закрытые беседки, перголы, навесы для отдыха"
+              },
+              {
+                icon: "Thermometer",
+                title: "Банные печи",
+                description: "Установка и обслуживание дровяных и электрических печей"
               },
               {
                 icon: "Ruler",
-                title: "Замеры и дизайн",
-                description: "Бесплатный выезд дизайнера и составление проекта"
+                title: "Проектирование",
+                description: "Бесплатный выезд архитектора и создание 3D-проекта"
               },
               {
                 icon: "Truck",
-                title: "Доставка и сборка",
-                description: "Доставляем и устанавливаем мебель по всему городу"
+                title: "Строительство под ключ",
+                description: "Полный цикл работ от фундамента до внутренней отделки"
               },
               {
-                icon: "Settings",
-                title: "Фурнитура",
-                description: "Качественная фурнитура от ведущих производителей"
+                icon: "Wrench",
+                title: "Коммуникации",
+                description: "Подключение электричества, водоснабжения, канализации"
               }
             ].map((service, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-craft-beige">
@@ -143,24 +143,24 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src="/img/4bbe6c53-4f9a-42ab-8c72-8cc994e43b32.jpg"
-                alt="Мастер за работой" 
+                src="/img/e5355506-634d-4579-8dc7-7a889ca783b0.jpg"
+                alt="Красивая деревянная беседка" 
                 className="rounded-2xl shadow-xl w-full h-[400px] object-cover"
               />
             </div>
             <div>
               <h2 className="text-3xl lg:text-4xl font-merriweather font-bold text-craft-brown mb-6">
-                О нашей мастерской
+                О нашей компании
               </h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Более 15 лет мы создаем качественную мебель из натурального дерева. 
-                Наша команда состоит из опытных мастеров, которые используют как 
-                традиционные методы столярного дела, так и современные технологии.
+                Более 15 лет мы строим качественные бани и беседки из натурального дерева. 
+                Наша команда состоит из опытных строителей, которые используют как 
+                традиционные технологии деревянного зодчества, так и современные материалы.
               </p>
               <p className="text-gray-700 mb-8 leading-relaxed">
-                Мы работаем только с проверенными поставщиками древесины и 
-                гарантируем долговечность каждого изделия. Каждый проект уникален 
-                и создается с учетом пожеланий клиента.
+                Мы работаем только с проверенными поставщиками древесины премиум-класса и 
+                гарантируем долговечность каждой постройки. Каждый проект уникален 
+                и создается с учетом ландшафта и пожеланий заказчика.
               </p>
               
               <div className="grid grid-cols-2 gap-6">
@@ -174,7 +174,7 @@ const Index = () => {
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-craft-orange mb-2">100%</div>
-                  <div className="text-gray-600">натуральное дерево</div>
+                  <div className="text-gray-600">экологичные материалы</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-craft-orange mb-2">2 года</div>
@@ -203,17 +203,17 @@ const Index = () => {
               {
                 name: "Анна Петрова",
                 rating: 5,
-                text: "Заказывали кухню. Качество превзошло все ожидания! Мастера очень профессиональные, все сделали точно в срок."
+                text: "Построили прекрасную баню на участке. Качество работ превзошло все ожидания! Строители очень профессиональные, все сделали точно в срок."
               },
               {
                 name: "Сергей Иванов", 
                 rating: 5,
-                text: "Делали встроенный шкаф в спальню. Отличная работа, все продумано до мелочей. Рекомендую!"
+                text: "Делали беседку с мангальной зоной. Отличная работа, все продумано до мелочей. Теперь это любимое место для семейных посиделок!"
               },
               {
                 name: "Елена Смирнова",
                 rating: 5,
-                text: "Реставрировали старый комод. Вернули ему вторую жизнь! Очень довольны результатом."
+                text: "Построили финскую сауну с комнатой отдыха. Получилось очень уютно и красиво! Очень довольны результатом."
               }
             ].map((review, index) => (
               <Card key={index} className="border-craft-beige">
@@ -290,7 +290,7 @@ const Index = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-craft-brown mb-1">Email</h3>
-                      <p className="text-gray-700">info@stolyrka45.ru</p>
+                      <p className="text-gray-700">info@stroybani45.ru</p>
                     </div>
                   </div>
                 </CardContent>
@@ -304,7 +304,7 @@ const Index = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-craft-brown mb-1">Адрес</h3>
-                      <p className="text-gray-700">г. Курган, ул. Мастерская, 45</p>
+                      <p className="text-gray-700">г. Курган, ул. Строительная, 45</p>
                     </div>
                   </div>
                 </CardContent>
@@ -334,21 +334,21 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <Icon name="Hammer" size={24} />
-                <h3 className="text-xl font-merriweather font-bold">Столярка45</h3>
+                <Icon name="Home" size={24} />
+                <h3 className="text-xl font-merriweather font-bold">СтройБани45</h3>
               </div>
               <p className="text-wood-light mb-4">
-                Качественная мебель из натурального дерева по индивидуальным проектам
+                Качественные бани и беседки из натурального дерева по индивидуальным проектам
               </p>
             </div>
             
             <div>
               <h4 className="font-semibold mb-4">Услуги</h4>
               <ul className="space-y-2 text-wood-light">
-                <li>Мебель на заказ</li>
-                <li>Встроенная мебель</li>
-                <li>Реставрация</li>
-                <li>Дизайн и замеры</li>
+                <li>Строительство бань</li>
+                <li>Беседки и навесы</li>
+                <li>Банные печи</li>
+                <li>Проектирование</li>
               </ul>
             </div>
             
@@ -356,14 +356,14 @@ const Index = () => {
               <h4 className="font-semibold mb-4">Контакты</h4>
               <ul className="space-y-2 text-wood-light">
                 <li>+7 (123) 456-78-90</li>
-                <li>info@stolyrka45.ru</li>
-                <li>г. Курган, ул. Мастерская, 45</li>
+                <li>info@stroybani45.ru</li>
+                <li>г. Курган, ул. Строительная, 45</li>
               </ul>
             </div>
           </div>
           
           <div className="border-t border-wood-medium mt-8 pt-8 text-center text-wood-light">
-            <p>&copy; 2024 Столярка45. Все права защищены.</p>
+            <p>&copy; 2024 СтройБани45. Все права защищены.</p>
           </div>
         </div>
       </footer>
